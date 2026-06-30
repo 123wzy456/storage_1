@@ -1,0 +1,10 @@
+name: 测试流水线
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  print-info:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "GitHub Actions 创建成功！"
